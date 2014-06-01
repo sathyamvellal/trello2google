@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<body}
+<form action="/login" method="POST">
+    <input type="text" id="trellokey" name="trellokey" placeholder="Trello Key"/><br/>
+    <input type="text" id="trellotoekn" name="trellotoken" placeholder="Trello Token"/><br/>
+    <input type="hidden" name="_csrf" value="{_csrf}"/>
+    <input type="submit" value="Login"/>
+</form>
+{/body}
