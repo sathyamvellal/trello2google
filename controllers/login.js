@@ -14,6 +14,6 @@ module.exports = function(app) {
     app.post('/login', function(req, res) {
         _.trellokey = req.body.trellokey;
         _.trellotoken = req.body.trellotoken;
-        res.send('Done!');
+        res.redirect('/trello');
     });
 };
